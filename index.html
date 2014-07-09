@@ -228,7 +228,7 @@
                             <li>
                                 Git isn't automatic<br>
                                 <small>
-                                    We need to tell it what files to track, stage and commit
+                                    We need to tell it what files to track, stage and commit.
                                 </small>
                             </li>
                         </ul>
@@ -238,9 +238,79 @@
                     </section>
                     
                     <section>
-                        <h3><code class='lowercase'>> </code></h3>
+                        <h3><code class='lowercase'>> git add [file]</code></h3>
                         <ul>
-                            <li></li>
+                            <li>
+                                Adds a file to be tracked by git
+                                <small>
+                                    Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
+                                </small>
+                            </li>
+                            <li>
+                                Adding all the files in a new project can be tedious
+                                <small>
+                                    Fortunately, there is a shortcut.<br>
+                                </small>
+                            </li>
+                            <li>
+                                <code>> git add .</code><br>
+                                <small>
+                                    This adds all files from the current working directory downwards.<br>
+                                    If run in the root directory of the project, it will add all files.
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='lowercase'>> git commit</code></h3>
+                        <ul>
+                            <li>
+                                Committing puts the staged files into the repository
+                                <small>
+                                    If files have changed, a diff is created reflecting the change.
+                                </small>
+                            </li>
+                            <li>
+                                Committing is like taking a snapshot of the code
+                                <small>
+                                    In the Version Control section, I discussed creating new folders to keep track of versions. <br>
+                                    Committing is more or less the equivalent, but a much cleaner solution.
+                                </small>
+                            </li>
+                            <li>
+                                The commit message is vitally important to document changes
+                                <small>
+                                    <code>> git commit -am 'made some really cool changes'</code><br>
+                                    The option <code>-am 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    
+                    
+                    <section>
+                        <h3><code class='lowercase'>> git </code></h3>
+                        <ul>
+                            <li>
+                                
+                                <small>
+                                    
+                                </small>
+                            </li>
+                            <li>
+                                
+                                <small>
+                                    
+                                </small>
+                            </li>
                         </ul>
                         <aside class="notes">
                             
