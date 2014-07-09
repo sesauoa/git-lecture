@@ -40,15 +40,16 @@
 	<body>
 
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+                
 				<section>
                     <h3>SESA presents</h3>
 					<h1>Git & GitHub</h1>
 					<h4>An Introduction to Version Control</h4>
 				</section>
 
+                
+                
 				<section>
 					<h2>SESA</h2>
                     <div class="stick-left">
@@ -71,7 +72,10 @@
 					</aside>
 				</section>
                 
+                
+                
                 <section>
+                    
                     <section>
                         <h4>Chapter 1</h4>
                         <h3>Version Control Systems</h3>
@@ -85,7 +89,7 @@
                         <ul class="fragment roll-in">
                             <li>Safety</li>
                             <li>Collaboration</li>
-                            <li>Maintainability</li>
+                            <li>Maintenance</li>
                         </ul>
                         <aside class="notes">
                             Ask class what they think it is.<br>
@@ -116,6 +120,7 @@
 
                         </aside>
 				    </section>
+                    
                     <section>
                         <h2>Collaboration</h2>
                         <p><small>How do multiple people work on a project simultaneously?</small></p>
@@ -132,17 +137,128 @@
                                 Instead use a Version Control System<br>
                                 <small>
                                     Changes made to files are stored as differences between versions.<br>
-                                    When you've made a change to a file(s), save the difference it into the VCS.
+                                    When you've made a change to code, save the difference it into the VCS.
                                 </small>
                             </li>
                         </ul>
                         <aside class="notes">
+                            Refer to GitHub and explain that we'll be using it later.
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h2>Maintenance</h2>
+                        <p><small>How do we support old versions of our code that have been deployed?</small></p>
+                        <ul>
+                            <li>
+                                Fix current code set and re-deploy.<br>
+                                <small>
+                                    More than likely, the programme has changed significantly and is now incompatible with the customer's system.<br>
+                                    The 'bug' could have been built into a new feature or is a dependency in something new.
+                                </small>
+                            </li>
+                            <li>
+                                Version control makes this a lot simpler.
+                                <small>
+                                With version control you could find the bug, go back and fix it then deploy the changes to the customer.<br>    
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            Again, explain that examples will come in the next chapter.
+                        </aside>
+                    </section>
+                    
+                </section>
+                
+                
+                
+                <section>
+                    <section>
+                        <h4>Chapter 2</h4>
+                        <h3>Git</h3>
+					   <aside class="notes">
+                           
+					   </aside>
+				    </section>
+                    <section>
+                        <h3>What is Git?</h3>
+                        <p><small>Git is a very popular distributed version control system that you'll be using during this course.</small></p>
+                        <ul>
+                            <li>
+                                What is a repository?<br>
+                                <small>A repo is your project code and history of changes that were made.</small>
+                            </li>
+                            <li>
+                                What goes in a repo?<br>
+                                <small>
+                                    Code<br>
+                                    Not compiled files (.exe .class .pyc)<br>
+                                    The history of changes is managed by git.
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='lowercase'>> git init</code></h3>
+                        <ul>
+                            <li>Creates an empty repo</li>
+                            <li>All history and settings are stored in the .git folder</li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='lowercase'>> git status</code></h3>
+                        <ul>
+                            <li>
+                                Show us the status of the repo<br>
+                                <small>
+                                    The branch we're on<br>
+                                    The files have changed<br>
+                                    The files are staged for commit
+                                </small>
+                            </li>
+                            <li>
+                                Git isn't automatic<br>
+                                <small>
+                                    We need to tell it what files to track, stage and commit
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='lowercase'>> </code></h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        
+                        <aside class="notes">
 
                         </aside>
                     </section>
-                </section>
-                <section>
 
+                    
+				</section>
+                
+                <section>
+                    
 					<aside class="notes">
 						
 					</aside>
