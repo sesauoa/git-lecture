@@ -210,7 +210,7 @@
                             <li>All history and settings are stored in the .git folder</li>
                         </ul>
                         <aside class="notes">
-                            
+                            Time to start the live demo.
                         </aside>
                     </section>
                     
@@ -238,7 +238,7 @@
                     </section>
                     
                     <section>
-                        <h3><code class='normalcase'>> git add [file]</code></h3>
+                        <h3><code class='normalcase'>> git add &lt;file&gt; [...]</code></h3>
                         <ul>
                             <li>
                                 Adds a file to be tracked by git<br>
@@ -284,7 +284,7 @@
                             <li>
                                 The commit message is used to document changes<br>
                                 <small>
-                                    <code>> git commit -am 'made some really cool changes'</code><br>
+                                    <code>git commit -am 'made some really cool changes'</code><br>
                                     The option <code>-am 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
                                 </small>
                             </li>
@@ -343,7 +343,7 @@
                     </section>
                     
                     <section>
-                        <h3><code class='normalcase'>> git branch [name]</code></h3>
+                        <h3><code class='normalcase'>> git branch &lt;branchname></code></h3>
                         <ul>
                             <li>
                                 Branches are different versions of a repo<br>
@@ -355,7 +355,7 @@
                             <li>
                                 <code>git branch feature/hello-nasser</code><br>
                                 <small>
-                                    
+                                    This creates a branch identical to the current branch for us to experiment on.
                                 </small>
                             </li>
                         </ul>
@@ -365,23 +365,66 @@
                     </section>
                     
                     <section>
-                        <h3><code class='normalcase'>> git checkout</code></h3>
+                        <h3><code class='normalcase'>> git checkout &lt;branch|commit></code></h3>
                         <ul>
                             <li>
-                                Allows us to go to any point in the history of the repo<br>
+                                Allows us to change branches at any time<br>
                                 <small>
-                                    Looking at the files after checking out a previous commit shows that we've gone back back in time.
+                                    <code>git checkout feature/hello-nasser</code><br>
+                                    This takes us to the <code>feature/hello-nasser</code> branch so we can make some changes without affecting others.
                                 </small>
                             </li>
                             <li>
-                                <br>
+                                Shortcut to create a branch and check it out<br>
                                 <small>
-                                    
+                                    <code>git checkout -b &lt;branch></code><br>
+                                </small>
+                            </li>
+                            <li>
+                                Also allows us to go to any point in the history of the repo<br>
+                                <small>
+                                    Looking at the files after checking out a previous commit shows that we've gone back back in time.
                                 </small>
                             </li>
                         </ul>
                         <aside class="notes">
                             
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='normalcase'>> git merge &lt;branchname></code></h3>
+                        <ul>
+                            <li>Merges changes from one branch into another<br>
+                                <small>
+                                    Once we've finished with out changes to the <code>feature/hello-nasser</code> branch, we'll want to propogate those changes to the main branch.<br>
+                                    To do this, we checkout the <code>master</code> branch then merge changes from the <code>feature/hello-nasser</code> branch.<br>
+                                    <code>git checkout master</code><br>
+                                    <code>git merge feature/hello-nasser</code>
+                                </small>
+                            </li>
+                            <li>
+                                Merge Conflits<br>
+                                <small>
+                                    If two people change the same lines of one file, the merge algorithm <code>git</code> uses isn't smart enough to tell which branch contains the correct changes.
+                                    The responsibility falls to you to sort out the conflict.
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+
+				</section>
+                
+                <section>
+                    
+                    <section>
+                        <h4>Chapter 3</h4>
+                        <h3>GitHub</h3>
+                        <aside class="notes">
+
                         </aside>
                     </section>
                     
@@ -412,9 +455,8 @@
 
                         </aside>
                     </section>
-
                     
-				</section>
+                </section>
                 
                 <section>
                     
@@ -442,10 +484,6 @@
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
