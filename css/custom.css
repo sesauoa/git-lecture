@@ -2,3 +2,7 @@
     display: block;
     text-align: left;
 }
+
+.lowercase {
+    text-transform: lowercase;
+}
