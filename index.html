@@ -241,13 +241,13 @@
                         <h3><code class='normalcase'>> git add [file]</code></h3>
                         <ul>
                             <li>
-                                Adds a file to be tracked by git
+                                Adds a file to be tracked by git<br>
                                 <small>
                                     Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
                                 </small>
                             </li>
                             <li>
-                                Adding all the files in a new project can be tedious
+                                Adding all the files in a new project can be tedious<br>
                                 <small>
                                     Fortunately, there is a shortcut.<br>
                                 </small>
@@ -269,20 +269,20 @@
                         <h3><code class='normalcase'>> git commit</code></h3>
                         <ul>
                             <li>
-                                Committing puts the staged files into the repository
+                                Committing puts the staged files into the repository<br>
                                 <small>
                                     If files have changed, a diff is created reflecting the change.
                                 </small>
                             </li>
                             <li>
-                                Committing is like taking a snapshot of the code
+                                Committing is like taking a snapshot of the code<br>
                                 <small>
                                     In the Version Control section, I discussed creating new folders to keep track of versions. <br>
                                     Committing is more or less the equivalent, but a much cleaner solution.
                                 </small>
                             </li>
                             <li>
-                                The commit message is vitally important to document changes
+                                The commit message is used to document changes<br>
                                 <small>
                                     <code>> git commit -am 'made some really cool changes'</code><br>
                                     The option <code>-am 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
@@ -297,16 +297,105 @@
                     
                     
                     <section>
+                        <h3 class='normalcase'>The <code class='normalcase'>.gitignore </code> file</h3>
+                        <ul>
+                            <li>
+                                You don't want all files to be tracked in your repository<br>
+                                <small>
+                                    Remember those binary files? They shouldn't be tracked.<br>
+                                    Local config for the project, IDEs and OS specific files should also be excluded.
+                                </small>
+                            </li>
+                            <li>
+                                <a href='https://gitignore.io'>gitignore.io</a><br>
+                                <small>
+                                    This is a great resource to create a .gitignore file for your project.
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='normalcase'>> git log</code></h3>
+                        <ul>
+                            <li>
+                                Shows the history of the repo<br>
+                                <small>
+                                    This is an easy way to see what changes have been made recently.
+                                </small>
+                            </li>
+                            <li>
+                                Each commit in the log contains:<br>
+                                <small>
+                                    - Who wrote it<br>
+                                    - When they committed it<br>
+                                    - A hash to uniquely identify it<br>
+                                    - The commit message
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='normalcase'>> git branch [name]</code></h3>
+                        <ul>
+                            <li>
+                                Branches are different versions of a repo<br>
+                                <small>
+                                    By default a repo is on the <code>master</code> branch, this ideally should be the stable build of the project.<br>
+                                    When we're developing something, we're going to break it. Having a safe space to do this is what branches provide.<br>
+                                </small>
+                            </li>
+                            <li>
+                                <code>git branch feature/hello-nasser</code><br>
+                                <small>
+                                    
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h3><code class='normalcase'>> git checkout</code></h3>
+                        <ul>
+                            <li>
+                                Allows us to go to any point in the history of the repo<br>
+                                <small>
+                                    Looking at the files after checking out a previous commit shows that we've gone back back in time.
+                                </small>
+                            </li>
+                            <li>
+                                <br>
+                                <small>
+                                    
+                                </small>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            
+                        </aside>
+                    </section>
+                    
+                    <section>
                         <h3><code class='normalcase'>> git </code></h3>
                         <ul>
                             <li>
-                                
+                                <br>
                                 <small>
                                     
                                 </small>
                             </li>
                             <li>
-                                
+                                <br>
                                 <small>
                                     
                                 </small>
