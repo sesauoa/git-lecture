@@ -1,502 +1,865 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Git </title>
+    <title>Git</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
-        <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
-			<div class="slides">
-                
-				<section>
-                    <h3>SESA presents</h3>
-					<h1>Git & GitHub</h1>
-					<h4>An Introduction to Version Control</h4>
-				</section>
+    <div class="reveal">
+        <div class="slides">
 
-                
-                
-				<section>
-					<h2>SESA</h2>
-                    <div class="stick-left">
-                        <h4>Community</h4>
-                        <ul>
-                            <li><small>We're a group of past and present Software Engineering students.</small></li>
-                            <li><small>Form friendships with students in other year levels.</small></li>
-                            <li><small>Make some great industry contacts.</small></li>
-                        </ul>
-                        <h4>Social</h4>
-                        <ul>
-                            <li><small>LAN parties, cardboard evenings, movie nights and post exam commiseration.</small></li>
-                            <li><small>Guest lectures from leaders in their field of expertise.</small></li>
-                        </ul>
-                    </div>
-					<aside class="notes">
-						Talk about the awesome LAN we had at work and cardboard nights in Leech.<br>
-                        Free Pizza.<br>
-                        $5 joining fee.<br>
-					</aside>
-				</section>
-                
-                
-                
+            <section>
+                <h3>SESA presents</h3>
+                <h1>Git & GitHub</h1>
+                <h4>An Introduction to Version Control</h4>
+            </section>
+
+
+
+            <section>
+                <h2>SESA</h2>
+                <div class="stick-left">
+                    <h4>Community</h4>
+                    <small>
+                            <ul>
+                                <li>We're a group of past and present Software Engineering students.</li>
+                                <li>Form friendships with students in other year levels.</li>
+                                <li>Make some great industry contacts.</li>
+                            </ul>
+                        </small>
+                    <h4>Social</h4>
+                    <small>
+                            <ul>
+                                <li>LAN parties, cardboard evenings, movie nights and post exam commiseration.</li>
+                                <li>Guest lectures from leaders in their field of expertise.</li>
+                            </ul>
+                        </small>
+                </div>
+                <aside class="notes">
+                    Talk about the awesome LAN we had at work and cardboard nights in Leech.
+                    <br>Free Pizza.
+                    <br>$5 joining fee.
+                    <br>
+                </aside>
+            </section>
+
+
+
+            <section>
+
                 <section>
-                    
-                    <section>
-                        <h4>Chapter 1</h4>
-                        <h3>Version Control Systems</h3>
-                        <aside class="notes">
+                    <h4>Chapter 1</h4>
+                    <h3>Version Control Systems</h3>
+                    <aside class="notes">
 
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3>Why do we need Version Control?</h3>
-                        <ul class="fragment roll-in">
-                            <li>Safety</li>
-                            <li>Collaboration</li>
-                            <li>Maintenance</li>
-                        </ul>
-                        <aside class="notes">
-                            Ask class what they think it is.<br>
-                        </aside>
-				    </section>
-                    
-                    <section>
-                        <h2>Safety</h2>
-                        <p><small>If we make a mistake in our code and break everything, how do we fix it?</small></p>
-                        <ul>
-                            <li>
-                                Copy and past folders to track versions?<br>
-                                <small>
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Why do we need Version Control?</h3>
+                    <ul class="fragment roll-in">
+                        <li>Safety</li>
+                        <li>Collaboration</li>
+                        <li>Maintenance</li>
+                    </ul>
+                    <aside class="notes">
+                        Ask class what they think it is.
+                        <br>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Safety</h2>
+                    <p><small>If we make a mistake in our code and break everything, how do we fix it?</small>
+                    </p>
+                    <ul>
+                        <li>
+                            Copy and past folders to track versions?
+                            <br>
+                            <small>
                                     This is horrible! Imagine the hundreds of folders to manage.<br>
                                     It only leads to confusion of where bugs were introduced and a bloated project folder.<br>
                                     What if you couldn't find where you went wrong and had to redo half of the project?
                                 </small>
-                            </li>
-                            <li>
-                                Instead use a Version Control System<br>
-                                <small>
+                        </li>
+                        <li>
+                            Instead use a Version Control System
+                            <br>
+                            <small>
                                     Changes made to files are stored as differences between versions.<br>
                                     When you've made a change to a file(s), save the difference it into the VCS.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
+                        </li>
+                    </ul>
+                    <aside class="notes">
 
-                        </aside>
-				    </section>
-                    
-                    <section>
-                        <h2>Collaboration</h2>
-                        <p><small>How do multiple people work on a project simultaneously?</small></p>
-                        <ul>
-                            <li>
-                                Pass files around on a USB drive?<br>
-                                <small>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Collaboration</h2>
+                    <p><small>How do multiple people work on a project simultaneously?</small>
+                    </p>
+                    <ul>
+                        <li>
+                            Pass files around on a USB drive?
+                            <br>
+                            <small>
                                     No. This is the old way of sharing progress.<br>
                                     Comparing two files and finding the difference between the two is very tedius and time consuming.<br>
                                     
                                 </small>
-                            </li>
-                            <li>
-                                Instead use a Version Control System<br>
-                                <small>
+                        </li>
+                        <li>
+                            Instead use a Version Control System
+                            <br>
+                            <small>
                                     Changes made to files are stored as differences between versions.<br>
                                     When you've made a change to code, save the difference it into the VCS.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            Refer to GitHub and explain that we'll be using it later.
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h2>Maintenance</h2>
-                        <p><small>How do we support old versions of our code that have been deployed?</small></p>
-                        <ul>
-                            <li>
-                                Fix current code set and re-deploy.<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        Refer to GitHub and explain that we'll be using it later.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Maintenance</h2>
+                    <p><small>How do we support old versions of our code that have been deployed?</small>
+                    </p>
+                    <ul>
+                        <li>
+                            Fix current code set and re-deploy.
+                            <br>
+                            <small>
                                     More than likely, the programme has changed significantly and is now incompatible with the customer's system.<br>
                                     The 'bug' could have been built into a new feature or is a dependency in something new.
                                 </small>
-                            </li>
-                            <li>
-                                Version control makes this a lot simpler.
-                                <small>
+                        </li>
+                        <li>
+                            Version control makes this a lot simpler.
+                            <small>
                                 With version control you could find the bug, go back and fix it then deploy the changes to the customer.<br>    
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            Again, explain that examples will come in the next chapter.
-                        </aside>
-                    </section>
-                    
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        Again, explain that examples will come in the next chapter.
+                    </aside>
                 </section>
-                
-                
-                
+
+            </section>
+
+
+
+            <section>
                 <section>
-                    <section>
-                        <h4>Chapter 2</h4>
-                        <h3>Git</h3>
-					   <aside class="notes">
-                           
-					   </aside>
-				    </section>
-                    <section>
-                        <h3>What is Git?</h3>
-                        <p><small>Git is a very popular distributed version control system that you'll be using during this course.</small></p>
-                        <ul>
-                            <li>
-                                What is a repository?<br>
-                                <small>A repo is your project code and history of changes that were made.</small>
-                            </li>
-                            <li>
-                                What goes in a repo?<br>
-                                <small>
+                    <h4>Chapter 2</h4>
+                    <h3>Git</h3>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h3>What is Git?</h3>
+                    <p><small>Git is a very popular distributed version control system that you'll be using during this course.</small>
+                    </p>
+                    <ul>
+                        <li>
+                            What is a repository?
+                            <br>
+                            <small>A repo is your project code and history of changes that were made.</small>
+                        </li>
+                        <li>
+                            What goes in a repo?
+                            <br>
+                            <small>
                                     Code<br>
                                     Not compiled files (.exe .class .pyc)<br>
                                     The history of changes is managed by git.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git init</code></h3>
-                        <ul>
-                            <li>Creates an empty repo</li>
-                            <li>All history and settings are stored in the .git folder</li>
-                        </ul>
-                        <aside class="notes">
-                            Time to start the live demo.
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git status</code></h3>
-                        <ul>
-                            <li>
-                                Show us the status of the repo<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git init</code></h3>
+                    <ul>
+                        <li>Creates an empty repo</li>
+                        <li>All history and settings are stored in the .git folder</li>
+                    </ul>
+                    <aside class="notes">
+                        Time to start the live demo.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git status</code></h3>
+                    <ul>
+                        <li>
+                            Show us the status of the repo
+                            <br>
+                            <small>
                                     The branch we're on<br>
                                     The files have changed<br>
                                     The files are staged for commit
                                 </small>
-                            </li>
-                            <li>
-                                Git isn't automatic<br>
-                                <small>
+                        </li>
+                        <li>
+                            Git isn't automatic
+                            <br>
+                            <small>
                                     We need to tell it what files to track, stage and commit.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git add &lt;file&gt; [...]</code></h3>
-                        <ul>
-                            <li>
-                                Adds a file to be tracked by git<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git add &lt;file&gt; [...]</code></h3>
+                    <ul>
+                        <li>
+                            Adds a file to be tracked by git
+                            <br>
+                            <small>
                                     Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
                                 </small>
-                            </li>
-                            <li>
-                                Adding all the files in a new project can be tedious<br>
-                                <small>
+                        </li>
+                        <li>
+                            Adding all the files in a new project can be tedious
+                            <br>
+                            <small>
                                     Fortunately, there is a shortcut.<br>
                                 </small>
-                            </li>
-                            <li>
-                                <code>> git add .</code><br>
-                                <small>
+                        </li>
+                        <li>
+                            <code>&gt; git add .</code>
+                            <br>
+                            <small>
                                     This adds all files from the current working directory downwards.<br>
                                     If run in the root directory of the project, it will add all files.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git commit</code></h3>
-                        <ul>
-                            <li>
-                                Committing puts the staged files into the repository<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git commit</code></h3>
+                    <ul>
+                        <li>
+                            Committing puts the staged files into the repository
+                            <br>
+                            <small>
                                     If files have changed, a diff is created reflecting the change.
                                 </small>
-                            </li>
-                            <li>
-                                Committing is like taking a snapshot of the code<br>
-                                <small>
+                        </li>
+                        <li>
+                            Committing is like taking a snapshot of the code
+                            <br>
+                            <small>
                                     In the Version Control section, I discussed creating new folders to keep track of versions. <br>
                                     Committing is more or less the equivalent, but a much cleaner solution.
                                 </small>
-                            </li>
-                            <li>
-                                The commit message is used to document changes<br>
-                                <small>
+                        </li>
+                        <li>
+                            The commit message is used to document changes
+                            <br>
+                            <small>
                                     <code>git commit -am 'made some really cool changes'</code><br>
                                     The option <code>-am 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    
-                    
-                    <section>
-                        <h3 class='normalcase'>The <code class='normalcase'>.gitignore </code> file</h3>
-                        <ul>
-                            <li>
-                                You don't want all files to be tracked in your repository<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+
+                <section>
+                    <h3 class='normalcase'>The <code class='normalcase'>.gitignore </code> file</h3>
+                    <ul>
+                        <li>
+                            You don't want all files to be tracked in your repository
+                            <br>
+                            <small>
                                     Remember those binary files? They shouldn't be tracked.<br>
                                     Local config for the project, IDEs and OS specific files should also be excluded.
                                 </small>
-                            </li>
-                            <li>
-                                <a href='https://gitignore.io'>gitignore.io</a><br>
-                                <small>
+                        </li>
+                        <li>
+                            <a href='https://gitignore.io'>gitignore.io</a>
+                            <br>
+                            <small>
                                     This is a great resource to create a .gitignore file for your project.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git log</code></h3>
-                        <ul>
-                            <li>
-                                Shows the history of the repo<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git log</code></h3>
+                    <ul>
+                        <li>
+                            Shows the history of the repo
+                            <br>
+                            <small>
                                     This is an easy way to see what changes have been made recently.
                                 </small>
-                            </li>
-                            <li>
-                                Each commit in the log contains:<br>
-                                <small>
+                        </li>
+                        <li>
+                            Each commit in the log contains:
+                            <br>
+                            <small>
                                     - Who wrote it<br>
                                     - When they committed it<br>
                                     - A hash to uniquely identify it<br>
                                     - The commit message
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git branch &lt;branchname></code></h3>
-                        <ul>
-                            <li>
-                                Branches are different versions of a repo<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git branch &lt;branchname&gt;</code></h3>
+                    <ul>
+                        <li>
+                            Branches are different versions of a repo
+                            <br>
+                            <small>
                                     By default a repo is on the <code>master</code> branch, this ideally should be the stable build of the project.<br>
                                     When we're developing something, we're going to break it. Having a safe space to do this is what branches provide.<br>
                                 </small>
-                            </li>
-                            <li>
-                                <code>git branch feature/hello-nasser</code><br>
-                                <small>
+                        </li>
+                        <li>
+                            <code>git branch feature/hello-nasser</code>
+                            <br>
+                            <small>
                                     This creates a branch identical to the current branch for us to experiment on.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git checkout &lt;branch|commit></code></h3>
-                        <ul>
-                            <li>
-                                Allows us to change branches at any time<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git checkout &lt;branch|commit&gt;</code></h3>
+                    <ul>
+                        <li>
+                            Allows us to change branches at any time
+                            <br>
+                            <small>
                                     <code>git checkout feature/hello-nasser</code><br>
                                     This takes us to the <code>feature/hello-nasser</code> branch so we can make some changes without affecting others.
                                 </small>
-                            </li>
-                            <li>
-                                Shortcut to create a branch and check it out<br>
-                                <small>
-                                    <code>git checkout -b &lt;branch></code><br>
+                        </li>
+                        <li>
+                            Shortcut to create a branch and check it out
+                            <br>
+                            <small>
+                                    <code>git checkout -b &lt;branch&gt;</code><br>
                                 </small>
-                            </li>
-                            <li>
-                                Also allows us to go to any point in the history of the repo<br>
-                                <small>
+                        </li>
+                        <li>
+                            Also allows us to go to any point in the history of the repo
+                            <br>
+                            <small>
                                     Looking at the files after checking out a previous commit shows that we've gone back back in time.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git merge &lt;branchname></code></h3>
-                        <ul>
-                            <li>Merges changes from one branch into another<br>
-                                <small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><code class='normalcase'>&gt; git merge &lt;branchname&gt;</code></h3>
+                    <ul>
+                        <li>Merges changes from one branch into another
+                            <br>
+                            <small>
                                     Once we've finished with out changes to the <code>feature/hello-nasser</code> branch, we'll want to propogate those changes to the main branch.<br>
                                     To do this, we checkout the <code>master</code> branch then merge changes from the <code>feature/hello-nasser</code> branch.<br>
                                     <code>git checkout master</code><br>
                                     <code>git merge feature/hello-nasser</code>
                                 </small>
-                            </li>
-                            <li>
-                                Merge Conflits<br>
-                                <small>
+                        </li>
+                        <li>
+                            Merge Conflits
+                            <br>
+                            <small>
                                     If two people change the same lines of one file, the merge algorithm <code>git</code> uses isn't smart enough to tell which branch contains the correct changes.
                                     The responsibility falls to you to sort out the conflict.
                                 </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
+                        </li>
+                    </ul>
+                    <aside class="notes">
 
-				</section>
-                
-                <section>
-                    
-                    <section>
-                        <h4>Chapter 3</h4>
-                        <h3>GitHub</h3>
-                        <aside class="notes">
-
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        <h3><code class='normalcase'>> git </code></h3>
-                        <ul>
-                            <li>
-                                <br>
-                                <small>
-                                    
-                                </small>
-                            </li>
-                            <li>
-                                <br>
-                                <small>
-                                    
-                                </small>
-                            </li>
-                        </ul>
-                        <aside class="notes">
-                            
-                        </aside>
-                    </section>
-                    
-                    <section>
-                        
-                        <aside class="notes">
-
-                        </aside>
-                    </section>
-                    
+                    </aside>
                 </section>
-                
+
+            </section>
+
+            <section>
+
                 <section>
-                    
-					<aside class="notes">
-						
-					</aside>
-				</section>
+                    <h4>Chapter 3</h4>
+                    <h3>GitHub</h3>
+                    <aside class="notes">
 
-			</div>
+                    </aside>
+                </section>
 
-		</div>
+                <section>
+                    <h3>What is Github?</h3>
+                    <small>
+                            <p>GitHub is a web app that hosts your repos remotely.</p>
+                            <p>It has a great web interface to see commits and statistics.</p>
+                        </small>
+                    <div>
+                        <p>It allows you to:</p>
+                        <small>
+                                <ul>
+                                    <li>Backup your code</li>
+                                    <li>Collaborate with others easily</li>
+                                    <li>Have a 'true' source of code</li>
+                                </ul>
+                            </small>
+                    </div>
+                    <aside class="notes">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+                    </aside>
+                </section>
 
-		<script>
+                <section>
+                    <h3>Centralised vs. Distributed VCS</h3>
+                    <ul>
+                        <li>Centralised.
+                            <br>
+                            <small>
+                                    No files need to be kept on the programmer's HDD<br>
+                                    All changes made need to be committed to the central repo
+                                </small>
+                        </li>
+                        <li>
+                            Distributed
+                            <br>
+                            <small>
+                                    Each person working on the code has a complete clone of the repo and contains all metadata.<br>
+                                    No dependence on a single source, but often there is a 'origin' for easy collaboration.<br>
+                                    Git is a distributed and GitHub is often used as the 'true source' remote repo.
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                    </aside>
+                </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+                <section>
+                    <h3>Creating a Repo</h3>
+                    <ul>
+                        <li>
+                            Name
+                            <br>
+                            <small>
+                                    <ul>
+                                    <li>Identifier on GitHub</li>
+                                    <li>Used as default directory name when cloning the repo.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                        <li>
+                            Public/Private
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li>Public means that other GitHub users can browse and, download and fork your repo.</li>
+                                        <li>This encourages open source software development!</li>
+                                        <li>Public repos are hosted for free :D</li>
+                                        <li>Private repos are invisible to everyone except owner and collaborations.</li>
+                                        <li>You can invite people to collaborate on your project.</li>
+                                        <li>Student accounts have 5 free private repos</li>
+                                        <li>Use these for assignments and personal projects. Make them public after marks are released.</li>
+                                        <li>Having your code public on github is a great way to show potential employers your skills.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+                    </aside>
+                </section>
 
-		</script>
+                <section>
+                    <h3>Connecting to GitHub</h3>
+                    <ul>
+                        <li>
+                            Add the GitHub repo as the 'origin' remote repo
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li><code>git remote add origin git@github.com:drpotato/git-lecture.git</code></li>
+                                        <li>You can have any number of remotes. Origin is usually the 'upstream' or 'source of truth'</li>
+                                        <li>Remotes can be any type of url, even a local file system url</li>
+                                    </ul>
+                                </small>
+                        </li>
+                        <li>
+                            Get your code on GitHub
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li><code>git push &lt;remote&gt; &lt;branch&gt;</code></li>
+                                        <li>add <code>-u</code> option to set branch as upstream.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
 
-	</body>
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Pull Requests</h3>
+                    <small><p>When we've made some changes to the code, but don't have sufficient permission to write data, you'll need to make a pull request to the owner of the repo.</p></small>
+                    <ul>
+                        <li>
+                            What is it?
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li>Sends a request to the owner to pull (merge) the changes you made into their repo.</li>
+                                        <li>This allows collaborators to view and discuss changes in a branch as they are made.</li>
+                                        <li>Developers can comment on pull requests, even on specific lines of code.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Issues</h3>
+                    <ul>
+                        <li>
+                            What are issues?
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li>Issues have the advantage over comments that they can be referenced in commit messages (you can also reference commit numbers eg “from b4ebbd4”)</li>
+                                        <li>e.g. <code>git commit -am 'changed countdown so it actually stops - fixes #2'</code></li>
+                                        <li>A finished PR can be merged back into master. This will close all the issues that have been fixed in that branch and put the code back into master.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Pulling Changes</h3>
+                    <ul>
+                        <li>
+                            Changes made on a remote branch need to be fetched
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li><code>git pull origin master</code></li>
+                                        <li>This fetches changes from the origin repo and merges them</li>
+                                    </ul>
+                                </small>
+                        </li>
+                        <li>
+                            <code>git pull</code> is actually a shortcut
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li><code>git fetch &lt;remote&gt; &lt;branch&gt;</code></li>
+                                        <li><code>git merge FETCH_HEAD</code></li>
+                                        <li>The pull shortcut is a lot easier, you'll probably never fetch manually.</li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Cloning a Repo</h3>
+                    <p><small>Downloads the repo to your local machine</small>
+                    </p>
+                    <ul>
+                        <li>
+                            <code>git clone [url] &lt;directory&gt;</code>
+                            <br>
+                            <small>
+                                    <ul>
+                                        <li><code>&lt;directory&gt;</code> is optional, by default it's the repo at the end of <code>[url]</code></li>
+                                        <li>This fetches changes from the origin repo and merges them</li>
+                                        <li>Automatically uses <code>[url]</code> as <code>origin</code></li>
+                                    </ul>
+                                </small>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>GitHub Tiki Tour</h3>
+                    <ul>
+                        <li>Adding Collaborators</li>
+                        <li>Switching from public to private (and visa versa)</li>
+                        <li>Deleting a repo</li>
+                        <li>Wiki</li>
+                        <li>Graphs</li>
+                        <li>Browsing users and organisations</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Undoing things</h3>
+                    <p style='color:red'>This is dangerous stuff!</p>
+                    <small>
+                            <ul>
+                                <li><code>git reset [file]</code><br>
+                                Unstages a file </li>
+                                <li><code>git commit --amend</code><br>
+                                Redoes the last commit, useful for when you forget to add a file.</li>
+                                <li><code>git commit --hard HEAD</code><br>
+                                Throw away all changes since the last commit.</li>
+                                <li><code>git checkout [filename]</code><br>
+                                Reset a file to it's state at last commit.<br>
+                                You can checkout any version of a file, read the docs to figure it out</li>
+                            </ul>
+                        </small>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Seeing What Changed</h3>
+                    <p>How do we see what has changed between versions?</p>
+                    <small>
+                            <ul>
+                                <li>
+                                    <code>git diff</code><br>
+                                    Shows all changes to files since the last commit.
+                                </li>
+                                <li>
+                                    <code>git diff [filename]</code><br>
+                                    Shows all changes to a specific file since the last commit.
+                                </li>
+                                <li>
+                                    <code>git diff [commit]</code><br>
+                                    Shows all changes since the commit.
+                                </li>
+                                <li>
+                                    <code>git diff &lt;branch&gt;..&lt;branch&gt;</code><br>
+                                    Shows the difference between two branches.
+                                </li>
+                            </ul>
+                        </small>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+            </section>
+
+            <section>
+                <h3>Recap</h3>
+                <p><small>What you should take away</small>
+                </p>
+                <ul>
+                    <li>The basics of working with Git
+                        <br>
+                        <small>
+                                    <ul>
+                                        <li><code>git init</code></li>
+                                        <li><code>git add .</code></li>
+                                        <li><code>git commit -am 'message'</code></li>
+                                    </ul>
+                                </small>
+                    </li>
+                    <li>Looking at your repo
+                        <br>
+                        <small>
+                                    <ul>
+                                        <li><code>git status</code></li>
+                                        <li><code>git log</code></li>
+                                        <li><code>git diff</code></li>
+                                    </ul>
+                                </small>
+                    </li>
+                    <li>
+                        Avoid graphical clients!
+                        <br>
+                        <small>Why? You might ask:</small>
+                        <br>
+                        <small>
+                                    <ul>
+                                        <li>Easier to make mistakes</li>
+                                        <li>Great opportunity to learn command line tools</li>
+                                        <li>Often leads to messy repo with many untracked files</li>
+                                    </ul>
+                                </small>
+                    </li>
+                </ul>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>Resources - Git</h3>
+                <ul>
+                    <li><a href="http://git-scm.com/">Git Website</a> (where you get Git)</li>
+                    <li><a href="http://git-scm.com/book">Git Book</a> (in depth)</li>
+                    <li><a href="http://rogerdudler.github.io/git-guide/">Simple Guide</a></li>
+                    <li><a href="http://gitimmersion.com/">Git Lab/Tutorial</a></li>
+                    <li><a href="https://github.com/github/gitignore">Git Ignores</a> in all flavours</li>
+                    <li><a href="https://github.com/ausesa">SESA GitHub Organisation</a></li>
+                    <li><a href="http://sesa.org.nz">SESA Online</a></li>
+                    <li><a href="http://www.facebook.com/groups/ausesa/">SESA on Facebook</a></li>
+                    <li><a href="https://github.com/drpotato/git-lecture">Repo for this presentation</a></li>
+                </ul>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+         // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                {
+                    src: 'lib/js/classList.js',
+                    condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/markdown/marked.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                {
+                    src: 'plugin/zoom-js/zoom.js',
+                    async: true,
+                    condition: function () {
+                        return !!document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true,
+                    condition: function () {
+                        return !!document.body.classList;
+                    }
+                }
+    ]
+        });
+    </script>
+
+</body>
+
 </html>
