@@ -328,8 +328,8 @@
                             The commit message is used to document changes
                             <br>
                             <small>
-                                    <code>git commit -am 'made some really cool changes'</code><br>
-                                    The option <code>-am 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
+                                    <code>git commit -m 'Make some really cool changes'</code><br>
+                                    The option <code>-m 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
                                 </small>
                         </li>
                     </ul>
@@ -624,7 +624,7 @@
                             <small>
                                     <ul>
                                         <li>Issues have the advantage over comments that they can be referenced in commit messages (you can also reference commit numbers eg “from b4ebbd4”)</li>
-                                        <li>e.g. <code>git commit -am 'changed countdown so it actually stops - fixes #2'</code></li>
+                                        <li>e.g. <code>git commit -m 'Change countdown so it actually stops - fix #2'</code></li>
                                         <li>A finished PR can be merged back into master. This will close all the issues that have been fixed in that branch and put the code back into master.</li>
                                     </ul>
                                 </small>
@@ -708,14 +708,15 @@
                     <small>
                             <ul>
                                 <li><code>git reset [file]</code><br>
-                                Unstages a file </li>
-                                <li><code>git commit --amend</code><br>
-                                Redoes the last commit, useful for when you forget to add a file.</li>
-                                <li><code>git commit --hard HEAD</code><br>
-                                Throw away all changes since the last commit.</li>
+                                Unstages the file.</li>
                                 <li><code>git checkout [filename]</code><br>
-                                Reset a file to it's state at last commit.<br>
-                                You can checkout any version of a file, read the docs to figure it out</li>
+                                Resets (permanently) a file to its state at the last commit.<br>
+                                You can checkout any version of a file, read the docs to figure it out.</li>
+                                <li><code>git commit --amend</code><br>
+                                Includes <i>all changes since the last commit</i> into the last commit.<br>
+                                Useful for when you forget to add a file.</li>
+                                <li><code>git reset --hard HEAD</code><br>
+                                Throws away (permanently) all changes since the last commit.</li>
                             </ul>
                         </small>
                     <aside class="notes">
@@ -764,7 +765,7 @@
                                     <ul>
                                         <li><code>git init</code></li>
                                         <li><code>git add .</code></li>
-                                        <li><code>git commit -am 'message'</code></li>
+                                        <li><code>git commit -m 'message'</code></li>
                                     </ul>
                                 </small>
                     </li>
