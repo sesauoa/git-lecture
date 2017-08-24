@@ -55,21 +55,21 @@
                 <div class="stick-left">
                     <h4>Community</h4>
                     <small>
-                            <ul>
-                                <li>We're a group of past and present Software Engineering students.</li>
-                                <li>Form friendships with students in other year levels.</li>
-                                <li>Make some great industry contacts.</li>
-                                <br>
-                            </ul>
-                        </small>
+                        <ul>
+                            <li>We're a group of past and present Software Engineering students.</li>
+                            <li>Form friendships with students in other year levels.</li>
+                            <li>Make some great industry contacts.</li>
+                            <br>
+                        </ul>
+                    </small>
                     <h4>Social</h4>
                     <small>
-                            <ul>
-                                <li>LAN parties, cardboard evenings, movie nights and post exam commiseration.</li>
-                                <li>Guest lectures from leaders in their field of expertise.</li>
-                                <li>Upcoming Games Day on the 3rd of September! </li>
-                            </ul>
-                        </small>
+                        <ul>
+                            <li>LAN parties, cardboard evenings, movie nights and post exam commiseration.</li>
+                            <li>Guest lectures from leaders in their field of expertise.</li>
+                            <li>Upcoming Games Day on the 3rd of September! </li>
+                        </ul>
+                    </small>
                 </div>
                 <aside class="notes">
                     Talk about the awesome LAN we had at work and cardboard nights in Leech.
@@ -107,54 +107,51 @@
 
                 <section>
                     <h2>Safety</h2>
-                    <p><small>If we make a mistake in our code and break everything, how do we fix it?</small>
-                    </p>
+                    <p><small>If we make a mistake in our code and break everything, how do we fix it?</small></p>
                     <ul>
                         <li>
                             Copy and past folders to track versions?
                             <br>
                             <small>
-                                    This is horrible! Imagine the hundreds of folders to manage.<br>
-                                    It only leads to confusion of where bugs were introduced and a bloated project folder.<br>
-                                    What if you couldn't find where you went wrong and had to redo half of the project?
-                                </small>
+                                This is horrible! Imagine the hundreds of folders to manage.<br>
+                                It only leads to confusion of where bugs were introduced and a bloated project folder.<br>
+                                What if you couldn't find where you went wrong and had to redo half of the project?
+                            </small>
                         </li>
                         <li>
                             Instead use a Version Control System
                             <br>
                             <small>
-                                    Changes made to files are stored as differences between versions.<br>
-                                    When you've made a change to a file(s), save the difference it into the VCS.
-                                </small>
+                                Changes made to files are stored as differences between versions.<br>
+                                When you've made a change to a file(s), save the difference it into the VCS.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
-                        Ever broken something and not known how to fix it?<br>
-                        If you use git you won't have to worry about it.
+                        Ever broken something and not known how to fix it?<br> If you use git you won't have to worry about
+                        it.
                     </aside>
                 </section>
 
                 <section>
                     <h2>Collaboration</h2>
-                    <p><small>How do multiple people work on a project simultaneously?</small>
-                    </p>
+                    <p><small>How do multiple people work on a project simultaneously?</small></p>
                     <ul>
                         <li>
                             Pass files around on a USB drive?
                             <br>
                             <small>
-                                    No. This is the old way of sharing progress.<br>
-                                    Comparing two files and finding the difference between the two is very tedius and time consuming.<br>
-                                    
-                                </small>
+                                No. This is the old way of sharing progress.<br>
+                                Comparing two files and finding the difference between the two is very tedius and time consuming.<br>
+                            </small>
                         </li>
                         <li>
                             Instead use a Version Control System
                             <br>
                             <small>
-                                    Changes made to files are stored as differences between versions.<br>
-                                    When you've made a change to code, save the difference it into the VCS.
-                                </small>
+                                Changes made to files are stored as differences between versions.<br>
+                                When you've made a change to code, save the difference it into the VCS.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -165,22 +162,21 @@
 
                 <section>
                     <h2>Maintenance</h2>
-                    <p><small>How do we support old versions of our code that have been deployed?</small>
-                    </p>
+                    <p><small>How do we support old versions of our code that have been deployed?</small></p>
                     <ul>
                         <li>
                             Fix current code set and re-deploy.
                             <br>
                             <small>
-                                    More than likely, the programme has changed significantly and is now incompatible with the customer's system.<br>
-                                    The 'bug' could have been built into a new feature or is a dependency in something new.
-                                </small>
+                                More than likely, the programme has changed significantly and is now incompatible with the customer's system.<br>
+                                The 'bug' could have been built into a new feature or is a dependency in something new.
+                            </small>
                         </li>
                         <li>
                             Version control makes this a lot simpler.
                             <small>
                                 With version control you could find the bug, go back and fix it then deploy the changes to the customer.<br>    
-                                </small>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -202,8 +198,7 @@
                 </section>
                 <section>
                     <h3>What is Git?</h3>
-                    <p><small>Git is a very popular distributed version control system that you'll be using during this course.</small>
-                    </p>
+                    <p><small>Git is a very popular distributed version control system that you'll be using during this course.</small></p>
                     <ul>
                         <li>
                             What is a repository?
@@ -214,11 +209,11 @@
                             What goes in a repo?
                             <br>
                             <small>
-                                    <ul>
-                                        <li>Code</li>
-                                        <li>Documentation</li>
-                                        <li>The history of changes (this is managed is managed by git)</li>
-                                    </ul>
+                                <ul>
+                                    <li>Code</li>
+                                    <li>Documentation</li>
+                                    <li>The history of changes (this is managed is managed by git)</li>
+                                </ul>
                             </small>
                         </li>
                         <li>
@@ -235,7 +230,8 @@
                     <aside class="notes">
                         git - the stupid content tracker
                         <br>Why is it called git?
-                        <br>Torvalds said: "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."
+                        <br>Torvalds said: "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux',
+                        now 'git'."
                     </aside>
                 </section>
 
@@ -257,17 +253,17 @@
                             Show us the status of the repo
                             <br>
                             <small>
-                                    The branch we're on<br>
-                                    The files have changed<br>
-                                    The files are staged for commit
-                                </small>
+                                The branch we're on<br>
+                                The files have changed<br>
+                                The files are staged for commit
+                            </small>
                         </li>
                         <li>
                             Git isn't automatic
                             <br>
                             <small>
-                                    We need to tell it what files to track, stage and commit.
-                                </small>
+                                We need to tell it what files to track, stage and commit.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -282,23 +278,23 @@
                             Adds a file to be tracked by git
                             <br>
                             <small>
-                                    Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
-                                </small>
+                                Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
+                            </small>
                         </li>
                         <li>
                             Adding all the files in a new project can be tedious
                             <br>
                             <small>
-                                    Fortunately, there is a shortcut.<br>
-                                </small>
+                                Fortunately, there is a shortcut.<br>
+                            </small>
                         </li>
                         <li>
                             <code>&gt; git add .</code>
                             <br>
                             <small>
-                                    This adds all files from the current working directory downwards.<br>
-                                    If run in the root directory of the project, it will add all files.
-                                </small>
+                                This adds all files from the current working directory downwards.<br>
+                                If run in the root directory of the project, it will add all files.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -313,24 +309,24 @@
                             Committing puts the staged files into the repository
                             <br>
                             <small>
-                                    If files have changed, a diff is created reflecting the change.
-                                </small>
+                                If files have changed, a diff is created reflecting the change.
+                            </small>
                         </li>
                         <li>
                             Committing is like taking a snapshot of the code
                             <br>
                             <small>
-                                    In the Version Control section, I discussed creating new folders to keep track of versions. <br>
-                                    Committing is more or less the equivalent, but a much cleaner solution.
-                                </small>
+                                In the Version Control section, I discussed creating new folders to keep track of versions. <br>
+                                Committing is more or less the equivalent, but a much cleaner solution.
+                            </small>
                         </li>
                         <li>
                             The commit message is used to document changes
                             <br>
                             <small>
-                                    <code>git commit -m 'Make some really cool changes'</code><br>
-                                    The option <code>-m 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
-                                </small>
+                                <code>git commit -m 'Make some really cool changes'</code><br>
+                                The option <code>-m 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -347,16 +343,16 @@
                             You don't want all files to be tracked in your repository
                             <br>
                             <small>
-                                    Remember those binary files? They shouldn't be tracked.<br>
-                                    Local config for the project, IDEs and OS specific files should also be excluded.
-                                </small>
+                                Remember those binary files? They shouldn't be tracked.<br>
+                                Local config for the project, IDEs and OS specific files should also be excluded.
+                            </small>
                         </li>
                         <li>
                             <a href='https://gitignore.io'>gitignore.io</a>
                             <br>
                             <small>
-                                    This is a great resource to create a .gitignore file for your project.
-                                </small>
+                                This is a great resource to create a .gitignore file for your project.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -371,18 +367,18 @@
                             Shows the history of the repo
                             <br>
                             <small>
-                                    This is an easy way to see what changes have been made recently.
-                                </small>
+                                This is an easy way to see what changes have been made recently.
+                            </small>
                         </li>
                         <li>
                             Each commit in the log contains:
                             <br>
                             <small>
-                                    - Who wrote it<br>
-                                    - When they committed it<br>
-                                    - A hash to uniquely identify it<br>
-                                    - The commit message
-                                </small>
+                                - Who wrote it<br>
+                                - When they committed it<br>
+                                - A hash to uniquely identify it<br>
+                                - The commit message
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -397,16 +393,16 @@
                             Branches are different versions of a repo
                             <br>
                             <small>
-                                    By default a repo is on the <code>master</code> branch, this ideally should be the stable build of the project.<br>
-                                    When we're developing something, we're going to break it. Having a safe space to do this is what branches provide.<br>
-                                </small>
+                                By default a repo is on the <code>master</code> branch, this ideally should be the stable build of the project.<br>
+                                When we're developing something, we're going to break it. Having a safe space to do this is what branches provide.<br>
+                            </small>
                         </li>
                         <li>
                             <code>git branch feature/hello-nasser</code>
                             <br>
                             <small>
-                                    This creates a branch identical to the current branch for us to experiment on.
-                                </small>
+                                This creates a branch identical to the current branch for us to experiment on.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -421,23 +417,23 @@
                             Allows us to change branches at any time
                             <br>
                             <small>
-                                    <code>git checkout feature/hello-nasser</code><br>
-                                    This takes us to the <code>feature/hello-nasser</code> branch so we can make some changes without affecting others.
-                                </small>
+                                <code>git checkout feature/hello-nasser</code><br>
+                                This takes us to the <code>feature/hello-nasser</code> branch so we can make some changes without affecting others.
+                            </small>
                         </li>
                         <li>
                             Shortcut to create a branch and check it out
                             <br>
                             <small>
-                                    <code>git checkout -b &lt;branch&gt;</code><br>
-                                </small>
+                                <code>git checkout -b &lt;branch&gt;</code><br>
+                            </small>
                         </li>
                         <li>
                             Also allows us to go to any point in the history of the repo
                             <br>
                             <small>
-                                    Looking at the files after checking out a previous commit shows that we've gone back in time.
-                                </small>
+                                Looking at the files after checking out a previous commit shows that we've gone back in time.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -451,19 +447,19 @@
                         <li>Merges changes from one branch into another
                             <br>
                             <small>
-                                    Once we've finished with out changes to the <code>feature/hello-nasser</code> branch, we'll want to propagate those changes to the main branch.<br>
-                                    To do this, we checkout the <code>master</code> branch then merge changes from the <code>feature/hello-nasser</code> branch.<br>
-                                    <code>git checkout master</code><br>
-                                    <code>git merge feature/hello-nasser</code>
-                                </small>
+                                Once we've finished with out changes to the <code>feature/hello-nasser</code> branch, we'll want to propagate those changes to the main branch.<br>
+                                To do this, we checkout the <code>master</code> branch then merge changes from the <code>feature/hello-nasser</code> branch.<br>
+                                <code>git checkout master</code><br>
+                                <code>git merge feature/hello-nasser</code>
+                            </small>
                         </li>
                         <li>
                             Merge Conflicts
                             <br>
                             <small>
-                                    If two people change the same lines of one file, the merge algorithm <code>git</code> uses isn't smart enough to tell which branch contains the correct changes.
-                                    The responsibility falls to you to sort out the conflict.
-                                </small>
+                                If two people change the same lines of one file, the merge algorithm <code>git</code> uses isn't smart enough to tell which branch contains the correct changes.
+                                The responsibility falls to you to sort out the conflict.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -486,18 +482,18 @@
                 <section>
                     <h3>What is Github?</h3>
                     <small>
-                            <p>GitHub is a web app that hosts your repos remotely.</p>
-                            <p>It has a great web interface to see commits and statistics.</p>
-                        </small>
+                        <p>GitHub is a web app that hosts your repos remotely.</p>
+                        <p>It has a great web interface to see commits and statistics.</p>
+                    </small>
                     <div>
                         <p>It allows you to:</p>
                         <small>
-                                <ul>
-                                    <li>Backup your code</li>
-                                    <li>Collaborate with others easily</li>
-                                    <li>Have a 'true' source of code</li>
-                                </ul>
-                            </small>
+                            <ul>
+                                <li>Backup your code</li>
+                                <li>Collaborate with others easily</li>
+                                <li>Have a 'true' source of code</li>
+                            </ul>
+                        </small>
                     </div>
                     <aside class="notes">
 
@@ -510,18 +506,18 @@
                         <li>Centralised
                             <br>
                             <small>
-                                    No files need to be kept on the programmer's HDD<br>
-                                    All changes made need to be committed to the central repo
-                                </small>
+                                No files need to be kept on the programmer's HDD<br>
+                                All changes made need to be committed to the central repo
+                            </small>
                         </li>
                         <li>
                             Distributed
                             <br>
                             <small>
-                                    Each person working on the code has a complete clone of the repo and contains all metadata.<br>
-                                    No dependence on a single source, but often there is a 'origin' for easy collaboration.<br>
-                                    Git is a distributed and GitHub is often used as the 'true source' remote repo.
-                                </small>
+                                Each person working on the code has a complete clone of the repo and contains all metadata.<br>
+                                No dependence on a single source, but often there is a 'origin' for easy collaboration.<br>
+                                Git is a distributed and GitHub is often used as the 'true source' remote repo.
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -536,27 +532,27 @@
                             Name
                             <br>
                             <small>
-                                    <ul>
-                                    <li>Identifier on GitHub</li>
-                                    <li>Used as default directory name when cloning the repo.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                <li>Identifier on GitHub</li>
+                                <li>Used as default directory name when cloning the repo.</li>
+                                </ul>
+                            </small>
                         </li>
                         <li>
                             Public/Private
                             <br>
                             <small>
-                                    <ul>
-                                        <li>Public means that other GitHub users can browse and, download and fork your repo.</li>
-                                        <li>This encourages open source software development!</li>
-                                        <li>Public repos are hosted for free :D</li>
-                                        <li>Private repos are invisible to everyone except owner and collaborations.</li>
-                                        <li>You can invite people to collaborate on your project.</li>
-                                        <li>Student accounts have unlimited free private repos!</li>
-                                        <li>Use these for assignments and personal projects. Make them public after marks are released.</li>
-                                        <li>Having your code public on github is a great way to show potential employers your skills.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li>Public means that other GitHub users can browse and, download and fork your repo.</li>
+                                    <li>This encourages open source software development!</li>
+                                    <li>Public repos are hosted for free :D</li>
+                                    <li>Private repos are invisible to everyone except owner and collaborations.</li>
+                                    <li>You can invite people to collaborate on your project.</li>
+                                    <li>Student accounts have unlimited free private repos!</li>
+                                    <li>Use these for assignments and personal projects. Make them public after marks are released.</li>
+                                    <li>Having your code public on github is a great way to show potential employers your skills.</li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -571,22 +567,22 @@
                             Add the GitHub repo as the 'origin' remote repo
                             <br>
                             <small>
-                                    <ul>
-                                        <li><code>git remote add origin git@github.com:drpotato/git-lecture.git</code></li>
-                                        <li>You can have any number of remotes. Origin is usually the 'upstream' or 'source of truth'</li>
-                                        <li>Remotes can be any type of url, even a local file system url</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li><code>git remote add origin git@github.com:drpotato/git-lecture.git</code></li>
+                                    <li>You can have any number of remotes. Origin is usually the 'upstream' or 'source of truth'</li>
+                                    <li>Remotes can be any type of url, even a local file system url</li>
+                                </ul>
+                            </small>
                         </li>
                         <li>
                             Get your code on GitHub
                             <br>
                             <small>
-                                    <ul>
-                                        <li><code>git push &lt;remote&gt; &lt;branch&gt;</code></li>
-                                        <li>add <code>-u</code> option to set branch as upstream.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li><code>git push &lt;remote&gt; &lt;branch&gt;</code></li>
+                                    <li>add <code>-u</code> option to set branch as upstream.</li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -602,12 +598,12 @@
                             What is it?
                             <br>
                             <small>
-                                    <ul>
-                                        <li>Sends a request to the owner to pull (merge) the changes you made into their repo.</li>
-                                        <li>This allows collaborators to view and discuss changes in a branch as they are made.</li>
-                                        <li>Developers can comment on pull requests, even on specific lines of code.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li>Sends a request to the owner to pull (merge) the changes you made into their repo.</li>
+                                    <li>This allows collaborators to view and discuss changes in a branch as they are made.</li>
+                                    <li>Developers can comment on pull requests, even on specific lines of code.</li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -622,12 +618,12 @@
                             What are issues?
                             <br>
                             <small>
-                                    <ul>
-                                        <li>Issues have the advantage over comments that they can be referenced in commit messages (you can also reference commit numbers eg “from b4ebbd4”)</li>
-                                        <li>e.g. <code>git commit -m 'Change countdown so it actually stops - fix #2'</code></li>
-                                        <li>A finished PR can be merged back into master. This will close all the issues that have been fixed in that branch and put the code back into master.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li>Issues have the advantage over comments that they can be referenced in commit messages (you can also reference commit numbers eg “from b4ebbd4”)</li>
+                                    <li>e.g. <code>git commit -m 'Change countdown so it actually stops - fix #2'</code></li>
+                                    <li>A finished PR can be merged back into master. This will close all the issues that have been fixed in that branch and put the code back into master.</li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -642,22 +638,22 @@
                             Changes made on a remote branch need to be fetched
                             <br>
                             <small>
-                                    <ul>
-                                        <li><code>git pull origin master</code></li>
-                                        <li>This fetches changes from the origin repo and merges them</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li><code>git pull origin master</code></li>
+                                    <li>This fetches changes from the origin repo and merges them</li>
+                                </ul>
+                            </small>
                         </li>
                         <li>
                             <code>git pull</code> is actually a shortcut
                             <br>
                             <small>
-                                    <ul>
-                                        <li><code>git fetch &lt;remote&gt; &lt;branch&gt;</code></li>
-                                        <li><code>git merge FETCH_HEAD</code></li>
-                                        <li>The pull shortcut is a lot easier, you'll probably never fetch manually.</li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li><code>git fetch &lt;remote&gt; &lt;branch&gt;</code></li>
+                                    <li><code>git merge FETCH_HEAD</code></li>
+                                    <li>The pull shortcut is a lot easier, you'll probably never fetch manually.</li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -667,19 +663,18 @@
 
                 <section>
                     <h3>Cloning a Repo</h3>
-                    <p><small>Downloads the repo to your local machine</small>
-                    </p>
+                    <p><small>Downloads the repo to your local machine</small></p>
                     <ul>
                         <li>
                             <code>git clone [url] &lt;directory&gt;</code>
                             <br>
                             <small>
-                                    <ul>
-                                        <li><code>&lt;directory&gt;</code> is optional, by default it's the repo at the end of <code>[url]</code></li>
-                                        <li>This fetches changes from the origin repo and merges them</li>
-                                        <li>Automatically uses <code>[url]</code> as <code>origin</code></li>
-                                    </ul>
-                                </small>
+                                <ul>
+                                    <li><code>&lt;directory&gt;</code> is optional, by default it's the repo at the end of <code>[url]</code></li>
+                                    <li>This fetches changes from the origin repo and merges them</li>
+                                    <li>Automatically uses <code>[url]</code> as <code>origin</code></li>
+                                </ul>
+                            </small>
                         </li>
                     </ul>
                     <aside class="notes">
@@ -706,19 +701,19 @@
                     <h3>Undoing things</h3>
                     <p style='color:red'>This is dangerous stuff!</p>
                     <small>
-                            <ul>
-                                <li><code>git reset [file]</code><br>
-                                Unstages the file.</li>
-                                <li><code>git checkout [filename]</code><br>
-                                Resets (permanently) a file to its state at the last commit.<br>
-                                You can checkout any version of a file, read the docs to figure it out.</li>
-                                <li><code>git commit --amend</code><br>
-                                Includes <i>all changes since the last commit</i> into the last commit.<br>
-                                Useful for when you forget to add a file.</li>
-                                <li><code>git reset --hard HEAD</code><br>
-                                Throws away (permanently) all changes since the last commit.</li>
-                            </ul>
-                        </small>
+                        <ul>
+                            <li><code>git reset [file]</code><br>
+                            Unstages the file.</li>
+                            <li><code>git checkout [filename]</code><br>
+                            Resets (permanently) a file to its state at the last commit.<br>
+                            You can checkout any version of a file, read the docs to figure it out.</li>
+                            <li><code>git commit --amend</code><br>
+                            Includes <i>all changes since the last commit</i> into the last commit.<br>
+                            Useful for when you forget to add a file.</li>
+                            <li><code>git reset --hard HEAD</code><br>
+                            Throws away (permanently) all changes since the last commit.</li>
+                        </ul>
+                    </small>
                     <aside class="notes">
 
                     </aside>
@@ -728,25 +723,25 @@
                     <h3>Seeing What Changed</h3>
                     <p>How do we see what has changed between versions?</p>
                     <small>
-                            <ul>
-                                <li>
-                                    <code>git diff</code><br>
-                                    Shows all changes to files since the last commit.
-                                </li>
-                                <li>
-                                    <code>git diff [filename]</code><br>
-                                    Shows all changes to a specific file since the last commit.
-                                </li>
-                                <li>
-                                    <code>git diff [commit]</code><br>
-                                    Shows all changes since the commit.
-                                </li>
-                                <li>
-                                    <code>git diff &lt;branch&gt;..&lt;branch&gt;</code><br>
-                                    Shows the difference between two branches.
-                                </li>
-                            </ul>
-                        </small>
+                        <ul>
+                            <li>
+                                <code>git diff</code><br>
+                                Shows all changes to files since the last commit.
+                            </li>
+                            <li>
+                                <code>git diff [filename]</code><br>
+                                Shows all changes to a specific file since the last commit.
+                            </li>
+                            <li>
+                                <code>git diff [commit]</code><br>
+                                Shows all changes since the commit.
+                            </li>
+                            <li>
+                                <code>git diff &lt;branch&gt;..&lt;branch&gt;</code><br>
+                                Shows the difference between two branches.
+                            </li>
+                        </ul>
+                    </small>
                     <aside class="notes">
 
                     </aside>
@@ -756,28 +751,27 @@
 
             <section>
                 <h3>Recap</h3>
-                <p><small>What you should take away</small>
-                </p>
+                <p><small>What you should take away</small></p>
                 <ul>
                     <li>The basics of working with Git
                         <br>
                         <small>
-                                    <ul>
-                                        <li><code>git init</code></li>
-                                        <li><code>git add .</code></li>
-                                        <li><code>git commit -m 'message'</code></li>
-                                    </ul>
-                                </small>
+                            <ul>
+                                <li><code>git init</code></li>
+                                <li><code>git add .</code></li>
+                                <li><code>git commit -m 'message'</code></li>
+                            </ul>
+                        </small>
                     </li>
                     <li>Looking at your repo
                         <br>
                         <small>
-                                    <ul>
-                                        <li><code>git status</code></li>
-                                        <li><code>git log</code></li>
-                                        <li><code>git diff</code></li>
-                                    </ul>
-                                </small>
+                            <ul>
+                                <li><code>git status</code></li>
+                                <li><code>git log</code></li>
+                                <li><code>git diff</code></li>
+                            </ul>
+                        </small>
                     </li>
                     <li>
                         Avoid graphical clients!
@@ -785,12 +779,12 @@
                         <small>"Why?" you might ask:</small>
                         <br>
                         <small>
-                                    <ul>
-                                        <li>Easier to make mistakes</li>
-                                        <li>Great opportunity to learn command line tools</li>
-                                        <li>Often leads to messy repo with many untracked files</li>
-                                    </ul>
-                                </small>
+                            <ul>
+                                <li>Easier to make mistakes</li>
+                                <li>Great opportunity to learn command line tools</li>
+                                <li>Often leads to messy repo with many untracked files</li>
+                            </ul>
+                        </small>
                     </li>
                 </ul>
                 <aside class="notes">
@@ -803,19 +797,13 @@
                 <ul>
                     <li><a href="http://git-scm.com/">Git Website</a> (where you get Git)</li>
                     <li><a href="http://git-scm.com/book">Git Book</a> (in depth)</li>
-                    <li><a href="http://rogerdudler.github.io/git-guide/">Simple Guide</a>
-                    </li>
-                    <li><a href="http://gitimmersion.com/">Git Lab/Tutorial</a>
-                    </li>
+                    <li><a href="http://rogerdudler.github.io/git-guide/">Simple Guide</a></li>
+                    <li><a href="http://gitimmersion.com/">Git Lab/Tutorial</a></li>
                     <li><a href="https://github.com/github/gitignore">Git Ignores</a> in all flavours</li>
-                    <li><a href="https://github.com/ausesa">SESA GitHub Organisation</a>
-                    </li>
-                    <li><a href="http://sesa.org.nz">SESA Online</a>
-                    </li>
-                    <li><a href="http://www.facebook.com/groups/ausesa/">SESA on Facebook</a>
-                    </li>
-                    <li><a href="https://github.com/drpotato/git-lecture">Repo for this presentation</a>
-                    </li>
+                    <li><a href="https://github.com/ausesa">SESA GitHub Organisation</a></li>
+                    <li><a href="http://sesa.org.nz">SESA Online</a></li>
+                    <li><a href="http://www.facebook.com/groups/ausesa/">SESA on Facebook</a></li>
+                    <li><a href="https://github.com/drpotato/git-lecture">Repo for this presentation</a></li>
                 </ul>
                 <aside class="notes">
 
@@ -831,7 +819,7 @@
 
     <script>
         // Full list of configuration options available here:
-         // https://github.com/hakimel/reveal.js#configuration
+        // https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
             controls: true,
             progress: true,
@@ -842,8 +830,7 @@
             transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
             // Optional libraries used to extend on reveal.js
-            dependencies: [
-                {
+            dependencies: [{
                     src: 'lib/js/classList.js',
                     condition: function () {
                         return !document.body.classList;
@@ -882,7 +869,7 @@
                         return !!document.body.classList;
                     }
                 }
-    ]
+            ]
         });
     </script>
 
