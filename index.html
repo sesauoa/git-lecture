@@ -6,7 +6,7 @@
 
     <title>Git</title>
 
-    <meta name="description" content="A Lecture about Version Control, Git and Github.">
+    <meta name="description" content="A Lecture about Version Control, Git and GitHub.">
     <meta name="author" content="Chris Morgan">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,8 @@
     </script>
 
     <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                     <h4>Social</h4>
                     <small>
                         <ul>
-                            <li>LAN parties, cardboard evenings, movie nights and post exam commiseration.</li>
+                            <li>LAN parties, cardboard nights, movie nights and post-exam commiseration.</li>
                             <li>Guest lectures from leaders in their field of expertise.</li>
                             <li>Upcoming Games Day on the 3rd of September! </li>
                         </ul>
@@ -110,7 +110,7 @@
                     <p><small>If we make a mistake in our code and break everything, how do we fix it?</small></p>
                     <ul>
                         <li>
-                            Copy and past folders to track versions?
+                            Copy and paste folders to track versions?
                             <br>
                             <small>
                                 This is horrible! Imagine the hundreds of folders to manage.<br>
@@ -119,11 +119,11 @@
                             </small>
                         </li>
                         <li>
-                            Instead use a Version Control System
+                            Use a Version Control System (VCS) instead
                             <br>
                             <small>
                                 Changes made to files are stored as differences between versions.<br>
-                                When you've made a change to a file(s), save the difference it into the VCS.
+                                When you've made a change to a file(s), save the difference into the VCS.
                             </small>
                         </li>
                     </ul>
@@ -142,15 +142,14 @@
                             <br>
                             <small>
                                 No. This is the old way of sharing progress.<br>
-                                Comparing two files and finding the difference between the two is very tedius and time consuming.<br>
+                                Comparing two files and finding the difference between the two is very tedious and time-consuming.<br>
                             </small>
                         </li>
                         <li>
-                            Instead use a Version Control System
+                            Create online VCS repository instead
                             <br>
                             <small>
-                                Changes made to files are stored as differences between versions.<br>
-                                When you've made a change to code, save the difference it into the VCS.
+                                If you're using Git, examples of online repositories include GitHub, BitBucket and GitLab.
                             </small>
                         </li>
                     </ul>
@@ -168,7 +167,7 @@
                             Fix current code set and re-deploy.
                             <br>
                             <small>
-                                More than likely, the programme has changed significantly and is now incompatible with the customer's system.<br>
+                                More than likely, the program has changed significantly and is now incompatible with the customer's system.<br>
                                 The 'bug' could have been built into a new feature or is a dependency in something new.
                             </small>
                         </li>
@@ -203,7 +202,7 @@
                         <li>
                             What is a repository?
                             <br>
-                            <small>A repo is your project code and history of changes that were made.</small>
+                            <small>A repo is your project code and the history of changes that were made.</small>
                         </li>
                         <li>
                             What goes in a repo?
@@ -250,12 +249,12 @@
                     <h3><code class='normalcase'>&gt; git status</code></h3>
                     <ul>
                         <li>
-                            Show us the status of the repo
+                            Shows us the status of the repo
                             <br>
                             <small>
                                 The branch we're on<br>
-                                The files have changed<br>
-                                The files are staged for commit
+                                The files that have changed<br>
+                                The files that are staged for commit
                             </small>
                         </li>
                         <li>
@@ -275,7 +274,7 @@
                     <h3><code class='normalcase'>&gt; git add &lt;file&gt; [...]</code></h3>
                     <ul>
                         <li>
-                            Adds a file to be tracked by git
+                            Adds a file to be tracked by Git
                             <br>
                             <small>
                                 Simply adding a file to the repository does not mean its changes are being tracked by git.<br>
@@ -325,7 +324,8 @@
                             <br>
                             <small>
                                 <code>git commit -m 'Make some really cool changes'</code><br>
-                                The option <code>-m 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.
+                                <!--The option <code>-m 'msg'</code> is a shortcut to add all tracked files and write a commit message in line before committing.-->
+								<!-- ^ This is wrong; -am will add all tracked files, but not -m -->
                             </small>
                         </li>
                     </ul>
@@ -480,7 +480,7 @@
                 </section>
 
                 <section>
-                    <h3>What is Github?</h3>
+                    <h3>What is GitHub?</h3>
                     <small>
                         <p>GitHub is a web app that hosts your repos remotely.</p>
                         <p>It has a great web interface to see commits and statistics.</p>
@@ -550,7 +550,7 @@
                                     <li>You can invite people to collaborate on your project.</li>
                                     <li>Student accounts have unlimited free private repos!</li>
                                     <li>Use these for assignments and personal projects. Make them public after marks are released.</li>
-                                    <li>Having your code public on github is a great way to show potential employers your skills.</li>
+                                    <li>Having your code public on GitHub is a great way to show potential employers your skills.</li>
                                 </ul>
                             </small>
                         </li>
